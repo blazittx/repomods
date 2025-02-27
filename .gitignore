@@ -1,0 +1,10 @@
+# Ignore everything
+*.dll
+
+# But not these files...
+!**/InfiniteColors.dll
+!**/FaceCustomization.dll
+
+
+dotnet sln MoreContent.sln add ./FaceCustomization/FaceCustomization.csproj
+dotnet sln MoreContent.sln add ./InfiniteColors/InfiniteColors.csproj
