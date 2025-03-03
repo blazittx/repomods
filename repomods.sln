@@ -5,11 +5,11 @@ VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "maxPlayers", "maxPlayers\maxPlayers.csproj", "{918F62C8-1F99-4CB2-8FBE-6772C0904E92}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "moreCommands", "moreCommands\moreCommands.csproj", "{04A29093-05D9-4C96-AD59-D9BD8ABAF2AE}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wideScreenSupport", "wideScreenSupport\wideScreenSupport.csproj", "{97E3F5F8-D2C3-4CAA-B00E-7AE3C77CE33D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lateJoining", "lateJoining\lateJoining.csproj", "{59CC788C-268F-4E10-B078-DBF812536EFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "moreCommands", "moreCommands\moreCommands.csproj", "{A2021084-253C-497E-9CF9-6F8071D6B9BB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,5 +44,9 @@ Global
 		{59CC788C-268F-4E10-B078-DBF812536EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59CC788C-268F-4E10-B078-DBF812536EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59CC788C-268F-4E10-B078-DBF812536EFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2021084-253C-497E-9CF9-6F8071D6B9BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2021084-253C-497E-9CF9-6F8071D6B9BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2021084-253C-497E-9CF9-6F8071D6B9BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2021084-253C-497E-9CF9-6F8071D6B9BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
