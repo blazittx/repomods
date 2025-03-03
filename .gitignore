@@ -2,9 +2,9 @@
 *.dll
 
 # But not these files...
-!**/InfiniteColors.dll
-!**/FaceCustomization.dll
+!**/maxPlayers.dll
+!**/moreCommands.dll
 
 
-dotnet sln MoreContent.sln add ./FaceCustomization/FaceCustomization.csproj
-dotnet sln MoreContent.sln add ./InfiniteColors/InfiniteColors.csproj
+dotnet sln repomods.sln add ./maxPlayers/maxPlayers.csproj
+dotnet sln repomods.sln add ./moreCommands/moreCommands.csproj
