@@ -1,28 +1,16 @@
-# Ignore build outputs
-**/bin/
+# Ignore everything
+*.dll
+*.xml
+
 **/obj/
 
-# Ignore all DLLs
-*.dll
-
-# Except for our explicitly allowed DLLs
+# But not these files...
 !**/maxPlayers.dll
 !**/moreCommands.dll
 !**/wideScreenSupport.dll
 !**/lateJoining.dll
 
-# Ignore typical .NET package outputs
-*.nupkg
-*.snupkg
-
-# Ignore IDE/Editor-specific files
-.vs/
-*.user
-*.suo
-*.csproj.user
-*.sln.docstates
-.idea/
-*.sln.iml
-
-# Optionally ignore logs
-*.log
+dotnet sln repomods.sln add ./maxPlayers/maxPlayers.csproj
+dotnet sln repomods.sln add ./moreCommands/moreCommands.csproj
+dotnet sln repomods.sln add ./wideScreenSupport/wideScreenSupport.csproj
+dotnet sln repomods.sln add ./lateJoining/lateJoining.csproj

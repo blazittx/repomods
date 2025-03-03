@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("maxPlayers")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8f41a9c25f0e8021aded727f76dc64312c882efa")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5faeeb099109dce791826f6734a0813d24aa5fe8")]
 [assembly: System.Reflection.AssemblyProductAttribute("maxPlayers")]
 [assembly: System.Reflection.AssemblyTitleAttribute("maxPlayers")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
