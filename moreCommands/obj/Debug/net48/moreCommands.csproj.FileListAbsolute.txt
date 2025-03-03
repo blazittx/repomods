@@ -11,11 +11,11 @@ C:\Users\info\Documents\GitHub\repomods\moreCommands\bin\Debug\net48\UnityEngine
 C:\Users\info\Documents\GitHub\repomods\moreCommands\bin\Debug\net48\UnityEngine.dll
 C:\Users\info\Documents\GitHub\repomods\moreCommands\bin\Debug\net48\UnityEngine.IMGUIModule.dll
 C:\Users\info\Documents\GitHub\repomods\moreCommands\bin\Debug\net48\UnityEngine.InputLegacyModule.dll
+C:\Users\info\Documents\GitHub\repomods\moreCommands\bin\Debug\net48\UnityEngine.PhysicsModule.dll
 C:\Users\info\Documents\GitHub\repomods\moreCommands\bin\Debug\net48\UnityEngine.UI.dll
 C:\Users\info\Documents\GitHub\repomods\moreCommands\bin\Debug\net48\netstandard.dll
 C:\Users\info\Documents\GitHub\repomods\moreCommands\bin\Debug\net48\UnityEngine.AudioModule.dll
 C:\Users\info\Documents\GitHub\repomods\moreCommands\bin\Debug\net48\UnityEngine.ParticleSystemModule.dll
-C:\Users\info\Documents\GitHub\repomods\moreCommands\bin\Debug\net48\UnityEngine.PhysicsModule.dll
 C:\Users\info\Documents\GitHub\repomods\moreCommands\bin\Debug\net48\UnityEngine.AnimationModule.dll
 C:\Users\info\Documents\GitHub\repomods\moreCommands\bin\Debug\net48\UnityEngine.AIModule.dll
 C:\Users\info\Documents\GitHub\repomods\moreCommands\bin\Debug\net48\Klattersynth.dll

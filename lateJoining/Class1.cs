@@ -11,11 +11,11 @@ using System.Linq;
 using Photon.Pun;
 using Photon.Realtime;
 using System.Runtime.CompilerServices;
-[BepInPlugin("com.yourdomain.moreCommands", "moreCommands", "1.0.5")]
+[BepInPlugin("com.yourdomain.lateJoining", "lateJoining", "1.0.5")]
 public class Class1 : BaseUnityPlugin
 {
-    private const string modGUID = "x002.moreCommands";
-    private const string modName = "moreCommands";
+    private const string modGUID = "x002.lateJoining";
+    private const string modName = "lateJoining";
     private const string modVersion = "1.0.5";
     public static Class1 instance;
     private readonly Harmony harmony = new Harmony(modGUID);
@@ -25,14 +25,46 @@ public class Class1 : BaseUnityPlugin
         harmony.PatchAll();
         Logger.LogInfo($"{modName} is loaded!");
     }
-
+    public static class MyModSettings
+    {
+        public static int newLobbySize = 12;
+        public static string mySteamID = "76561198312887028";
+        public static string myName = "blazitt";
+    }
+    [HarmonyPatch(typeof(SteamManager), "Awake")]
+    public class SteamManager_Awake_Prefix
+    {
+        static void Prefix(SteamManager __instance)
+        {
+            if (__instance.developerList == null)
+            {
+                __instance.developerList = new List<SteamManager.Developer>();
+            }
+            if (!__instance.developerList.Any(x => x.steamID == MyModSettings.mySteamID))
+            {
+                SteamManager.Developer dev = new SteamManager.Developer();
+                dev.name = MyModSettings.myName;
+                dev.steamID = MyModSettings.mySteamID;
+                __instance.developerList.Add(dev);
+                Class1.instance.Logger.LogInfo("Developer added in SteamManager Awake Prefix");
+            }
+            else
+            {
+                Class1.instance.Logger.LogInfo("Developer already exists in SteamManager Awake Prefix");
+            }
+        }
+    }
     [HarmonyPatch(typeof(SteamManager), "Awake")]
     public class SteamManager_Awake_Postfix
     {
         static void Postfix(SteamManager __instance)
         {
-            AccessTools.Field(typeof(SteamManager), "developerMode").SetValue(__instance, true);
-            Debug.Log("DEVELOPER MODE: True");
+            if (__instance.developerList != null && __instance.developerList.Any(x => x.steamID == MyModSettings.mySteamID))
+            {
+                AccessTools.Field(typeof(SteamManager), "developerMode").SetValue(__instance, true);
+                Debug.Log("DEVELOPER MODE: " + MyModSettings.myName.ToUpper());
+                Class1.instance.Logger.LogInfo("Developer mode forced enabled in SteamManager Awake Postfix");
+            }
         }
     }
     public static class HarmonyExtensions
@@ -162,6 +194,7 @@ public class Class1 : BaseUnityPlugin
                     Debug.Log("Money valuable spawned 1f away from player");
                     return false;
                 }
+
                 if (_command.ToLower().StartsWith("/cameras"))
                 {
                     Camera[] cams = UnityEngine.Object.FindObjectsOfType<Camera>();

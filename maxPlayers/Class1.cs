@@ -31,8 +31,6 @@ public class Class1 : BaseUnityPlugin
     public static class MyModSettings
     {
         public static int newLobbySize = 12;
-        public static string mySteamID = "76561198312887028";
-        public static string myName = "blazitt";
     }
 
     // ------------------------------------------------------------------------

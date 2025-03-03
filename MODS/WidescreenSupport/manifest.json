@@ -1,0 +1,7 @@
+{
+  "name": "Widescreen Support",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/blazittx/repomods",
+  "description": "Widescreen support for R.E.P.O. Better performance then other counterparts. Looking into the stretching issue",
+  "dependencies": ["BepInEx-BepInExPack-5.4.2100"]
+}

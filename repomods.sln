@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "moreCommands", "moreCommand
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wideScreenSupport", "wideScreenSupport\wideScreenSupport.csproj", "{97E3F5F8-D2C3-4CAA-B00E-7AE3C77CE33D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lateJoining", "lateJoining\lateJoining.csproj", "{59CC788C-268F-4E10-B078-DBF812536EFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -38,5 +40,9 @@ Global
 		{97E3F5F8-D2C3-4CAA-B00E-7AE3C77CE33D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97E3F5F8-D2C3-4CAA-B00E-7AE3C77CE33D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97E3F5F8-D2C3-4CAA-B00E-7AE3C77CE33D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59CC788C-268F-4E10-B078-DBF812536EFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59CC788C-268F-4E10-B078-DBF812536EFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59CC788C-268F-4E10-B078-DBF812536EFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59CC788C-268F-4E10-B078-DBF812536EFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
