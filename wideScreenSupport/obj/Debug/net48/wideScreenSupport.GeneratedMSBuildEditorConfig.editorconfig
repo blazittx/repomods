@@ -1,8 +1,0 @@
-is_global = true
-build_property.RootNamespace = wideScreenSupport
-build_property.ProjectDir = C:\Users\info\Documents\GitHub\repomods\wideScreenSupport\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.CsWinRTUseWindowsUIXamlProjections = false
-build_property.EffectiveAnalysisLevelStyle = 
-build_property.EnableCodeStyleSeverity = 
